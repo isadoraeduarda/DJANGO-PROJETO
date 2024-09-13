@@ -148,7 +148,6 @@ Metodos HTTP:
         `DELETE:agendamentos/delete/<int:id>/
 
 
-         {
       "id": <id do agendamento>,
       "data_pagamento": "<data do pagamento>",
       "permite_recorrencia": <booleano>,
