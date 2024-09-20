@@ -1,4 +1,5 @@
 from django.db import models
+from loguru import logger
 
 class Agendamento(models.Model):
     data_pagamento = models.DateField(verbose_name="Data de Pagamento")
@@ -11,6 +12,7 @@ class Agendamento(models.Model):
     valor_pagamento = models.IntegerField()
 
     def save(self, *args, **kwargs):
+        logger.info('salvando registro na base de dados')
         if isinstance(self.valor_pagamento, float):
             self.valor_pagamento = int(self.valor_pagamento * 100)
         super(Agendamento, self).save(*args, **kwargs)
