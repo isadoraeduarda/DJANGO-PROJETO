@@ -195,3 +195,9 @@ Exemplo CURL
 curl --request DELETE \
   --url http://127.0.0.1:8000/api/agendamentos/delete/4/ 
 ```
+
+---
+
+## To do: 
+
+- [ ] Melhorar gestão dos arquivos do banco
