@@ -201,3 +201,5 @@ curl --request DELETE \
 ## To do: 
 
 - [ ] Melhorar gestão dos arquivos do banco
+- [ ] Remover da documentação as rotas do CURL e adicionar as rotas do Swagger
+- [ ] Implementar autenticação
